@@ -1,0 +1,29 @@
+table {
+	text-align: left;
+	border-collapse: collapse;
+	width: 900px;
+	margin-bottom: 1em;
+}
+
+table th, table td {
+	border: 1px solid #AACC99;
+	padding: 4px;
+}
+
+table th.names {
+	font-weight: normal;
+	background-color: #EEFFCC;
+}
+
+table td.title {
+	width: 70%;	
+}
+
+a:link, a:visited {
+	color: #355F7C;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}

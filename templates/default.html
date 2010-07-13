@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Results for $symbol ($curr_date)</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	</head>
+	<body>
+		<h1>Results for $symbol ($curr_date)</h1>
+		<h3>$num_features features, $num_articles articles total:</h3>
+		#for $f in $features:
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3" class="names">
+						<strong>Tags:</strong> $f.names
+					</th>
+				</tr>
+				<tr>
+					<th>
+						Title
+					</th>
+					<th>
+						Date Posted
+					</th>
+					<th>
+						Weight
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				#for $a in $f.articles:
+				<tr>
+					<td class="title">
+						<a href="$a.link" target="_blank">$a.title</a>
+					</td>
+					<td>
+						$a.date
+					</td>
+					<td>
+						$a.weight
+					</td>
+				</tr>
+				#end for
+			</tbody>
+		</table>
+		#end for
+		<h3>All Articles:</h3>
+		#for $a in $articles:
+		<p>
+			<a href="$a.link" targert="_blank"><strong>$a.title</strong> ($a.date)</a>
+		</p>
+		#end for
+	</body>
+</html>
