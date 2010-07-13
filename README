@@ -1,4 +1,4 @@
-Fetches news articles from Yahoo Finance and Google Finance RSS by stock symbol (e.g. MSFT, ORCL, USO), and groups the articles using non-negative matrix factorization (NMF).  Sometimes the groupings are wonky, but relevant themes throughout the stories do arise.  This can at least be used for a quick perusal of news articles, FWIW.
+This is a Python script that fetches news articles from Yahoo Finance and Google Finance RSS by stock symbol (e.g. MSFT, ORCL, USO), and groups the articles using non-negative matrix factorization (NMF).  Sometimes the groupings are wonky, but relevant themes throughout the stories do arise.  This can at least be used for a quick perusal of news articles, FWIW.
 
 Beautiful Soup is used to extract the text from each article.  Stop words are removed and only English words are used in the word matrices for each article.  
 
